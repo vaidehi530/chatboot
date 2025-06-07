@@ -26,6 +26,8 @@ def chatbot():
             reply = "Books are a great source of knowledge."
         elif "fan" in user_input:
             reply = "A fan is a device that moves air to keep things cool."
+        elif "chair" in user_input :
+            reply= "used to sit ."
             
         elif "bye" in user_input:
             reply = "Goodbye! Have a great day."
