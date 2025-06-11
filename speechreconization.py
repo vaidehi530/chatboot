@@ -41,6 +41,11 @@ def chatbot_reply(command):
 
     elif "how are you" in command:
         return "I'm just a bot, but I'm doing great!"
+    
+    elif "open google" in command:
+      webbrowser.open("https://www.google.com")
+      return "opening google..."
+
 
     elif "open youtube" in command:
         webbrowser.open("https://www.youtube.com")
@@ -68,6 +73,15 @@ def chatbot_reply(command):
         with open("note.txt", "a") as f:
             f.write(note + "\n")
         return "Note saved successfully."
+    
+    elif "open calculator" in command:
+       os.system("calc")
+       return "opening calculator "
+
+    elif "open paint" in command:
+       os.system("mspaint")
+       return "opening mspaint "
+ 
 
     elif "bye" in command or "exit" in command:
         return "Goodbye! Have a nice day."
